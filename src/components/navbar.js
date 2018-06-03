@@ -35,21 +35,21 @@ class NavBar extends Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              <li>
                 <NavLink href="/">About Me</NavLink>
-              </NavItem>
-              <NavItem>
+              </li>
+              <li>
                 <NavLink href="/services">My Services</NavLink>
-              </NavItem>
-              <NavItem>
+              </li>
+              <li>
                 <NavLink href="/works">My Works</NavLink>
-              </NavItem>
-              <NavItem>
+              </li>
+              <li>
                 <NavLink href="/videos">My Videos</NavLink>
-              </NavItem>
-              <NavItem>
+              </li>
+              <li>
                 <NavLink href="/request">Request a Quote</NavLink>
-              </NavItem>
+              </li>
             </Nav>
           </Collapse>
         </Navbar>
