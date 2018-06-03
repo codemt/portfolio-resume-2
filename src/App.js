@@ -3,7 +3,7 @@ import NavBar from './components/navbar';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route , Switch } from 'react-router-dom';
 import About from './components/about';
 import Services from './components/services';
 import Works from './components/works';
@@ -14,6 +14,7 @@ class App extends Component {
   render() {
     return (
       <Router>
+          <Switch>
       <div className="App">
         <NavBar /> 
         <Route path="/" exact strict component={About} />
@@ -23,6 +24,7 @@ class App extends Component {
         <Route path="/request" exact strict component={Request} />
         <Route path="/profile" exact strict component={Profile} />
       </div>
+        </Switch>
       </Router>
     );
   }
