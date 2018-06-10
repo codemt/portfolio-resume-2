@@ -36,27 +36,27 @@ class NavBar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <li>
-                <NavLink href="/">
+                <NavLink href="/" to="/">
                 <a className="nav-link" href="/">About Me  <span class="sr-only">(current)</span></a>
                 </NavLink>
               </li>
               <li>
-                <NavLink href="/services">
+                <NavLink href="/services" to="/services">
                 <a className="nav-link" href="/services"> My Services  <span class="sr-only">(current)</span></a>
                 </NavLink>
               </li>
               <li>
-                <NavLink href="/works">
+                <NavLink href="/works" to="/works">
                 <a className="nav-link" href="/works">My Works  <span class="sr-only">(current)</span></a>
                 </NavLink>
               </li>
               <li>
-                <NavLink href="/videos">
+                <NavLink href="/videos" to="/videos">
                 <a className="nav-link" href="/videos">My Videos  <span class="sr-only">(current)</span></a>
                 </NavLink>
               </li>
               <li>
-                <NavLink href="/request">
+                <NavLink href="/request" to="/request">
                 <a className="nav-link" href="/request">Request a Quote  <span class="sr-only">(current)</span></a></NavLink>
               </li>
             </Nav>
